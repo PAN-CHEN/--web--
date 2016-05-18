@@ -1,0 +1,172 @@
+﻿*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font-size:100%;
+	vertical-align:baseline;
+}
+/*header*/
+body{
+	margin:0;
+	font-family:'Microsoft YaHei',sans-serif;
+}
+.header{
+	background-color:#F5F5F5;
+	width:100%;
+	height:88px;
+	border-bottom:thick ridge #2C3E50;
+}
+.logo{
+	padding-top:0.2em;
+	margin-left:15%;
+	float:left;
+	width:7%;
+	height:auto;
+}
+.header p{
+	font-size:1.8em;
+	color:#191970;
+	float:right;
+	display:inline-block;
+    margin:25px 20% 0px 0px; 
+	text-shadow: 0px 0px rgb(93, 116, 156), -1px 0px #444;
+	letter-spacing:0.3em;
+	overflow:auto;
+}
+/*star progect*/
+#team{
+	background:white;
+	text-align:center;
+	padding: 4% 0;	
+}
+.wrap{
+	width:95%;
+	margin:0px auto;
+}
+/*父元素适应子元素*/
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 1px;
+  margin-top:-1px;
+}
+.team-grids h2{
+	color: #777;
+	font-size: 2.5em;
+	font-weight: 300;
+	padding-bottom: 1%;
+}
+.team-grids p{
+	width: 78%;
+	color: #000;
+	font-size: 0.8755em;
+	font-weight: 300;
+	padding-bottom: 2.3%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 1.9em;
+}
+.images_1_of_4{
+	display: block;
+	float:left;
+	margin-left:5%;
+	margin-top:2%;
+	text-align: center;
+}
+.images_1_of_4:first-child { 
+	margin-left: 0; 
+} 
+.images_1_of_4 {
+	width: 26.6%;
+}
+.images_1_of_4 a.radius img{
+	border:25px double #D3D3D3;
+	width: 85%;
+	cursor: pointer;
+	border-radius:8px;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	cursor:default;
+}
+.images_1_of_4 a img:hover{
+	opacity: 0.8;
+}
+.images_1_of_4  h3{
+	color: #777;
+	font-size:1.5em;
+	font-weight :400;
+	padding: 0.5em 0em 0.3em 0em;
+}
+.images_1_of_4  p {
+	font-size: 0.9em;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.9em;
+	padding: 0em 0em 1.3em 0em;
+}
+.majiang p{
+	margin-bottom:3.9em;
+}
+
+/*** Media Queries ***/
+@media only screen and (max-width: 1024px){
+	.team-grids h2{
+		font-size:2.2em;
+	}
+    .images_1_of_4 h3{
+		font-size:1.3em;
+	}
+}
+@media only screen and (max-width: 768px){
+	.header p{
+		font-size:1.5em;
+	}
+	.team-grids h2{
+		font-size: 2em;
+	}
+	.images_1_of_4{
+		width:40%;
+		margin-top:2%;
+	}
+	.images_1_of_4 h3{
+		font-size:1.3em;
+	}
+	.images_1_of_4 a.radius img{
+		width:60%;
+	}
+}
+@media only screen and (max-width: 640px){
+	.team-grids h2{
+		font-size:1.5em;
+	}
+	.images_1_of_4 h3{
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 480px){
+	.header h2,.team-grids h2{
+		font-size:1.2em;
+	}
+	.images_1_of_4 h3{
+		font-size: 1em;
+	}
+	.images_1_of_4 a.radius img {
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 320px){
+	.logo{
+		display:none;
+	}
+	.images_1_of_4{
+		width:100%;
+	}
+	.images_1_of_4 a.radius img {
+		width: 50%;
+	}
+}
